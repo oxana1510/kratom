@@ -1,0 +1,80 @@
+.contact{
+	.container{
+		padding-top: 6rem;
+		padding-bottom: 1rem;
+	}
+	.title{
+		text-align: center;
+		span{
+			color: #247ab7;
+			white-space: nowrap;
+			img{
+				margin-right: 1.5rem;
+			}
+		}
+	}
+	&__img{
+		img{
+			max-width: 83.3rem;
+			width: 100%;
+			display: block;
+			margin: auto;
+		}
+	}
+	&__form{
+		position: relative;
+		top: -9rem;
+		@include container-shadow;
+		margin: 3rem auto auto;
+		padding: 4rem;
+		background: rgba(255, 255, 255, 0.95);
+		input[type=text],
+		input[type=email],
+		textarea{
+			display: block;
+			width: 100%;
+			border: 0.1rem solid #a3b7cd;
+			margin-bottom: 3rem;
+			color: #a1a1a1;
+			font: 1.6rem $font1;
+			padding-left: 2rem;
+
+			@include input-contact;
+		}
+		input[type=text],
+		input[type=email]{
+			height: 5rem;
+			line-height: 5rem;
+		}
+		textarea{
+			padding-top: 1.5rem;
+			height: 28.9rem;
+		}
+		input[type=submit]{
+			@include button;
+			@include button-submit;
+			display: block;
+			margin: 0.5rem auto 1rem;
+		}
+	}
+}
+
+@media screen and (max-width: 850px){
+.contact .container{
+	padding-top: 4rem;
+}
+.contact__form{
+	padding: 4rem 2rem;
+}
+}
+@media screen and (max-width: 768px){
+.contact__form{
+	top: -7rem;
+}
+}
+
+@media screen and (max-width: 370px){
+.contact .title span{
+	font-size: 3.5rem;
+}
+}

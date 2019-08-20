@@ -1,0 +1,41 @@
+@font-face {font-family: "AllerLight-Regular";
+    display: swap;
+    src: url("../fonts/AllerLight-Regular.eot");
+    src: url("../fonts/AllerLight-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AllerLight-Regular.woff2") format("woff2"),
+    url("../fonts/AllerLight-Regular.woff") format("woff"),
+    url("../fonts/AllerLight-Regular.ttf") format("truetype"),
+    url("../fonts/AllerLight-Regular.svg#Aller Light") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {font-family: "ArialMT-Bold";
+    display: swap;
+    src: url("../fonts/ArialMTBold.eot");
+    src: url("../fonts/ArialMTBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ArialMTBold.woff2") format("woff2"),
+    url("../fonts/ArialMTBold.woff") format("woff"),
+    url("../fonts/ArialMTBold.ttf") format("truetype"),
+    url("../fonts/ArialMTBold.svg#Arial MT") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {font-family: "ArialMTStd";
+    display: swap;
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/ArialMTStd.eot");
+    src: url("../fonts/ArialMTStd.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ArialMTStd.woff2") format("woff2"),
+    url("../fonts/ArialMTStd.woff") format("woff"),
+    url("../fonts/ArialMTStd.ttf") format("truetype"),
+    url("../fonts/ArialMTStd.svg#Arial MT Std") format("svg");
+}
+
+
+$font1: "ArialMTStd",sans-serif;
+$font2: "AllerLight-Regular", sans-serif;
+$font-bold: "ArialMT-Bold", sans-serif;

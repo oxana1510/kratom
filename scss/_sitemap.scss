@@ -1,0 +1,12 @@
+.sitemap{
+	li{
+		padding-bottom: 1rem;
+	}
+	a{
+		color: #2279b6;
+		font-size: 1.6rem;
+    	&:hover{
+			text-decoration: underline;
+    	}
+	}
+}

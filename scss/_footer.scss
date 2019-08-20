@@ -1,0 +1,36 @@
+.footer{
+	.container{
+		padding-top: 3rem;
+		padding-bottom: 4.5rem;
+		text-align: center;
+	}
+	&__logo{
+	}
+	&__menu{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		padding: 2rem 0;
+		li{
+			padding: 0 2rem;
+		}
+		a{
+			color: #7f7f7f;
+			font: 1.4rem/2.7rem $font-bold;
+			text-transform: uppercase;
+			&:hover{
+				color: darken(#7f7f7f, 30%);
+			}
+		}
+	}
+	p{
+		color: #8b8b8b;
+		font-size: 1.3rem;
+		line-height: 2.4rem;
+	}
+}

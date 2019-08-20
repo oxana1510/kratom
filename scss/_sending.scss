@@ -1,0 +1,22 @@
+.sending{
+	background: #fcfbfa;
+	.container{
+		padding-top: 5.5rem;
+		padding-bottom: 4.5rem;
+		text-align: center;
+	}
+	p{
+		font-size: 1.3rem;
+		strong{
+			font: normal 1.6rem $font-bold;
+			display: block;
+		}
+	}
+	&__icon{
+		padding: 1rem 0;
+		img{
+			margin: 1rem 3rem;
+			vertical-align: middle;
+		}
+	}
+}

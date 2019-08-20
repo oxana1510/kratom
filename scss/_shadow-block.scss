@@ -1,0 +1,133 @@
+.shadow-block{
+	@include container-shadow;
+	margin-bottom: 5rem;
+	margin-top: 2.5rem;
+	.container{
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+	p{
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+	strong{
+		font-weight: normal;
+		font-family: $font-bold;
+	}
+	a{
+		color: #0064b4;
+		word-break: break-all;
+		&:hover{
+			color: lighten(#0064b4, 20%);
+		}
+	}
+}
+.center{
+	text-align: center;
+}
+.pd-top-bottom{	
+	padding-top: 8rem;
+	padding-bottom: 3rem;
+}
+.form-login{
+	.title{
+		padding-top: 2rem;
+		font-size: 2.5rem;
+		padding-bottom: 0;
+	}
+	p{
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+	label{
+		font: 1.6rem $font-bold;
+		padding-top: 1.5rem;
+		display: block;
+	}
+	input[type=text],
+	input[type=password],
+	input[type=email],
+	input[type=tel],
+	select,
+	textarea{
+		display: block;
+		border: 0.1rem solid #a3b7cd;
+		background: #fff;
+		height: 4.5rem;
+		width: 100%;
+		padding-left: 2rem;
+		color: #a1a1a1;
+	}
+	textarea{
+		height: 15rem;
+	}
+	span{
+		padding: 0.5rem 0 0 0.2rem;
+		display: block;
+	}
+	input[type=submit]{
+		display: block;
+		@include button;
+		@include button-submit;
+		margin: 2rem auto auto;
+	}
+	.checkbox{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		margin-bottom: 2rem;
+		input[type=checkbox]{
+			margin-top: 1.5rem;
+			margin-right: 1rem;
+		}
+	}
+	.select{
+		padding-top: 1.5rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		select{
+		    max-width: 20.2rem;
+		    background-image: url(../img/arrow-bottom.svg);
+		    background-repeat: no-repeat;
+		    background-position: 92%;
+		    padding-left: 2.5rem;
+		    color: #777;
+		    font: 1.2rem "ArialMT-Bold",sans-serif;
+		    cursor: pointer;
+			max-width: 20.2rem;
+			margin-left: 1.5rem;
+		}
+	}
+}
+
+
+
+
+
+/*==progress password====*/
+.pass-graybar {
+  height: 3px;
+  background-color: #CCC;
+  width: 100%;
+  position: relative;
+}
+
+.pass-colorbar {
+  height: 3px;
+  background-image: url(../img/passwordstrength.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pass-percent, .pass-text {
+  font-size: 1em;
+}
+
+.pass-percent {
+  margin-right: 5px;
+}

@@ -1,0 +1,178 @@
+.block-color{
+	background-color: #f8f6f5;
+	background-image: url(../img/WhatisKratom.png);
+	background-position: -7rem bottom;
+	background-repeat: no-repeat;
+	.container{
+		padding-top: 13rem;
+		padding-bottom: 17rem;
+	}
+	.text{
+		max-width: 46rem;
+		margin-left: auto;
+	}
+}
+
+@media screen and (max-width: 1250px){
+.block-color{
+	background-position: -20rem bottom;	
+}	
+}
+
+@media screen and (max-width: 1115px){
+.block-color{
+	background-position: -30rem bottom;	
+}	
+}
+
+@media screen and (max-width: 992px){
+.block-color{
+	background-position: -45rem bottom;	
+}
+}
+
+@media screen and (max-width: 850px){
+.block-color{
+	background-position: -55rem bottom;	
+}
+}
+
+@media screen and (max-width: 768px){
+.block-color{
+	background-image: url(../img/WhatisKratom-mob.png);
+	background-position: bottom left;
+	background-size: 520px;
+	.container{
+		padding-top: 8rem;
+		padding-bottom: 25rem;
+	}
+	.text{
+		max-width: 100%;
+		.title{
+			text-align: center;
+		}
+	}	
+}	
+}
+
+
+
+
+
+.block-color-bg2{
+	background-image: url(../img/HistoryandTradition.png);
+	background-position: 20rem bottom;	
+}
+@media screen and (max-width: 1600px){
+.block-color-bg2{
+	background-position: 10rem bottom;
+}
+}
+@media screen and (max-width: 1640px){
+.block-color-bg2{
+	background-position: 0 bottom;
+}
+}
+@media screen and (max-width: 1250px){
+.block-color-bg2{
+	background-position: -7rem bottom;	
+}	
+}
+@media screen and (max-width: 1115px){
+.block-color-bg2{
+	background-position: -18rem bottom;	
+}	
+}
+
+@media screen and (max-width: 992px){
+.block-color-bg2{
+	background-position: -38rem bottom;	
+}
+}
+
+@media screen and (max-width: 768px){
+.block-color-bg2{
+	background-image: url(../img/Historyand-Tradition-mob.png);
+	background-size: 460px;
+	background-position: bottom center;
+}
+}
+
+
+.block-color-bg3{
+	background-image: url(../img/RegulatoryHistory-bg.jpg);
+	background-position: -210rem 45%;
+	.container{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.text{
+		max-width: 55rem;
+		padding-left: 5rem;
+	}
+	&__img{
+		margin: auto;
+		width: 100%;
+		img{
+			width: 100%;
+			height: auto;
+		}
+		
+	}
+}
+
+@media screen and (max-width: 1800px){
+.block-color-bg3{
+	background-position: -220rem 45%;
+}
+}
+
+@media screen and (max-width: 1600px){
+.block-color-bg3{
+	background-position: -230rem 45%;
+}
+}
+@media screen and (max-width: 1400px){
+.block-color-bg3{
+	background-position: -240rem 45%;
+}	
+}
+
+@media screen and (max-width: 992px){
+.block-color-bg3{
+	background-position: -240rem 60%;
+	.container{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.text{
+		max-width: 100%;
+		padding-left: 0;
+	}
+}
+}
+@media screen and (max-width: 768px){
+.block-color-bg3{
+	background-size: auto;
+	background-position: -260rem 60%;
+	.container{
+		padding-bottom: 8rem;
+	}
+}
+}
+@media screen and (max-width: 490px){
+.block-color-bg3{
+	background-position: -270rem 60%;
+}	
+}
+@media screen and (max-width: 410px){
+.block-color-bg3{
+	background-position: -280rem 63%;
+}	
+}

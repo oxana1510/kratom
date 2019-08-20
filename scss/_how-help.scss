@@ -1,0 +1,223 @@
+.how-help{
+	background-image: url(../img/woman-reverse.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-color: #f7fbfc;
+	.container{
+		max-width: 1600px;
+		padding:0 5rem 7.8rem;
+	}
+	&__img{
+		img{
+			display: block;
+		}
+	}
+	&__img2{
+		img{
+			max-width: 44rem;
+			width: 100%;
+		}
+	}
+	h1{
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		max-width: 66.8rem;
+		width: 100%;
+		height: 11rem;
+		color: #fff;
+		font: 5.5rem/5rem $font2;
+		background: -o-radial-gradient(24.5rem 108.8rem, #2265a6, #1d2874);
+		background: radial-gradient(24.5rem 108.8rem, #2265a6, #1d2874);
+		&:before,
+		&:after{
+			position: absolute;
+			top: 0;
+			content: "";
+		}
+		&:after{
+			width: 2.5rem;
+			height: 100%;
+			left: 100%;
+			background: -o-linear-gradient(190deg, transparent, transparent 50%, #1d2874 50%,#1d2874);
+			background: linear-gradient(260deg, transparent, transparent 50%, #1d2874 50%,#1d2874);
+		}
+		&:before{
+			width: 5000px;
+			height: 100%;
+			background: #1d2874;
+			right: 100%;
+		}
+	}
+	p{
+		font-size: 2.3rem;
+		padding: 2.3rem 0;
+	}
+	&__item{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		max-width: 50.6rem;
+		width: 100%;
+		span{
+			position: relative;
+			max-width: 17.5rem;
+			display: block;
+			color: #4c6482;
+			font: 1.6rem $font-bold;
+			text-transform: uppercase;
+			letter-spacing: 0.64rem;
+			padding: 0.8rem 2rem;
+			-webkit-box-shadow: 0 0 1rem rgba(24, 24, 24, 0.05);
+			        box-shadow: 0 0 1rem rgba(24, 24, 24, 0.05);
+			border-radius: 1.3rem;
+			background: #fff;
+			margin: 0 1.5rem 1.5rem 0;
+			text-align: center;
+			&:after{
+				position: absolute;
+				content: "";
+				width: 0.7rem;
+				height: 1.1rem;
+				background: -o-linear-gradient(338deg, #fff, #fff 50%, transparent 50%, transparent);
+				background: linear-gradient(112deg, #fff, #fff 50%, transparent 50%, transparent);
+				bottom: -1rem;
+				right: 1.5rem;
+				-webkit-transform: rotate(3deg);
+				    -ms-transform: rotate(3deg);
+				        transform: rotate(3deg);
+			}
+		}
+	}
+	.btn{
+		margin-top: 1.5rem;
+		max-width: 44.5rem;
+		width: 100%;
+	}
+	.btn2{
+		margin-top: 0;
+	}
+}
+
+
+.how-help2{
+	background-image: none;
+		.container{
+			max-width: 1280px;
+			background-image: url(../img/woman-reverse.png);
+			background-repeat: no-repeat;
+			background-position: right top;
+			background-size: 51.2rem;
+		}
+}
+@media screen and (max-width: 1705px){
+.how-help{
+	background-position: 84rem top;
+}
+}
+@media screen and (max-width: 1440px){
+.how-help{
+	background-position: 70rem top;
+}
+}
+@media screen and (max-width: 1280px){
+.how-help{
+	background-position: 51rem top;
+}
+}
+
+@media screen and (max-width: 992px){
+.how-help2 .container{
+	background-position: 43rem top;
+}
+}
+@media screen and (max-width: 880px){
+.how-help{
+	background-size: 40rem auto;
+	background-position: 50rem bottom;
+}
+}
+@media screen and (max-width: 768px){
+.how-help{
+	background-position: 40rem bottom;
+	h1{
+		font-size: 4.5rem;
+	}
+	&__img{
+		img{
+			margin: auto;
+			max-width: 61.2rem;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__img2 img{
+		max-width: 51.2rem;
+	}
+	.btn2{
+		margin: auto;
+	}
+
+}
+.how-help2{
+	.container{
+		background-position: calc(70% - -7rem) bottom;
+		background-size: 44rem;
+		padding-bottom: 30rem;
+	}
+} 
+}
+
+@media screen and (max-width: 640px){
+.how-help {
+    h1{
+    	font-size: 4rem;
+    }
+}
+}
+@media screen and (max-width: 576px){
+.how-help{
+	padding-bottom: 19.8rem;
+	background-position: 19rem bottom;
+	&__item{
+		max-width: 100%;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	h1{
+		font-size: 3.5rem;
+		line-height: 3.5rem;
+		background: -o-radial-gradient(9.5rem 12.8rem, #2265a6, #1d2874);
+		background: radial-gradient(9.5rem 12.8rem, #2265a6, #1d2874);
+	}
+	.btn{
+		max-width: 33.5rem;
+		margin: auto;
+	}
+	.btn{
+		max-width: 100%;
+	}
+}
+.how-help2{
+	padding-bottom: 0;
+} 
+}
+
+@media screen and (max-width: 420px){
+.how-help{
+	background-position: 9rem bottom;
+	h1{
+		font-size: 3rem;
+	}
+}
+.how-help2 .container{
+		// background-position: 5rem bottom;
+}
+}

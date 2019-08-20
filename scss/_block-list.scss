@@ -1,0 +1,65 @@
+.block-list{
+	background: url(../img/Why-choose-bg.jpg) no-repeat;
+	background-position: right bottom;
+	.container{
+		padding-top: 13rem;
+		padding-bottom: 12rem;
+	}
+	.title{
+		padding-bottom: 5rem;
+	}
+	ul{
+		max-width: 72.8rem;
+		width: 100%;
+		li{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			font-size: 1.6rem;
+			height: 6rem;
+			color: #313131;
+			border-bottom: 0.1rem solid #e8e4e5;
+			&:first-child{
+				border-top: 0.1rem solid #e8e4e5;
+			}
+			img{
+				vertical-align: middle;
+				margin-right: 1.5rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px){
+.block-list{
+	background-position: 20rem bottom;
+}
+}
+@media screen and (max-width: 992px){
+.block-list{
+	background-position: -1rem bottom;
+	ul{
+		max-width: 40rem;
+	}
+}
+}
+
+@media screen and (max-width: 768px){
+.block-list{
+	background-position: center bottom;
+	background-size: 520px;
+	.container{
+		padding-top: 8rem;
+		padding-bottom: 25rem;
+	}
+	.title{
+		text-align: center;
+	}
+	ul{
+		max-width: 100%;
+	}
+}
+}
