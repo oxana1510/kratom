@@ -1,0 +1,14 @@
+.review-name{
+	display: inline-block;
+	padding: 2rem 0 4rem;
+	font-size: 1.4rem;
+}
+.review-link{
+	color: #0064b4;
+	text-align: center;
+	display: block;
+	font-size: 1.8rem;
+	&:hover{
+		color: lighten(#0064b4, 20%);
+	}
+}

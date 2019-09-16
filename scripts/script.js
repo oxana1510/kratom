@@ -32,3 +32,12 @@ $( function() {
 } );
 
 
+
+//search dropdown form
+
+
+$(document).ready(function(){
+  $('.fieldset-title').click(function () {
+    $('.fieldset-wrapper').toggleClass('fieldset-wrapper-show');
+    });
+  });

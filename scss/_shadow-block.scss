@@ -1,10 +1,17 @@
 .shadow-block{
 	@include container-shadow;
 	margin-bottom: 5rem;
-	margin-top: 2.5rem;
+	margin-top: 3rem;
 	.container{
 		padding-top: 5rem;
 		padding-bottom: 5rem;
+	}
+	img{
+		display: block;
+		margin: auto;
+		max-width: 50rem;
+		width: 100%;
+		height: auto;
 	}
 	p{
 		font-size: 1.2rem;
@@ -72,6 +79,7 @@
 		margin: 2rem auto auto;
 	}
 	.checkbox{
+		position: relative;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -79,9 +87,48 @@
 		    -ms-flex-align: center;
 		        align-items: center;
 		margin-bottom: 2rem;
+		padding-left: 3rem;
 		input[type=checkbox]{
-			margin-top: 1.5rem;
-			margin-right: 1rem;
+			position: absolute;
+		  	opacity: 0;
+		  	cursor: pointer;
+		  	height: 0;
+		  	width: 0;
+		}
+		.checkmark{
+			position: absolute;
+			cursor: pointer;
+		  	top: 1.5rem;
+		  	left: 0;
+		  	padding: 0;
+		 	height: 2rem;
+		  	width: 2rem;
+		  	background: #eee;
+		}
+		&:hover input[type=checkbox] ~ .checkmark {
+		  background: #ccc;
+		}
+		input[type=checkbox]:checked ~ .checkmark {
+		  background: #2691cb;
+		}
+		.checkmark:after {
+		  	position: absolute;
+		  	content: "";
+		 	display: none;
+		}
+		input[type=checkbox]:checked ~ .checkmark:after{
+		   display: block;
+		}
+		.checkmark:after {
+		  left: 0.6rem;
+		  top: 0.2rem;
+		  width: 0.5rem;
+		  height: 1rem;
+		  border: solid #fff;
+		  border-width: 0 0.3rem 0.3rem 0;
+		  -webkit-transform: rotate(45deg);
+		  -ms-transform: rotate(45deg);
+		  transform: rotate(45deg);
 		}
 	}
 	.select{
@@ -89,6 +136,9 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		label{
+			white-space: nowrap;
+		}
 		select{
 		    max-width: 20.2rem;
 		    background-image: url(../img/arrow-bottom.svg);
@@ -130,4 +180,15 @@
 
 .pass-percent {
   margin-right: 5px;
+}
+
+
+@media screen and (max-width: 420px){
+.form-login .seclect-check{
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	select{
+		margin-left: 0;
+	}
+}
 }

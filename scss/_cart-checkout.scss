@@ -1,0 +1,262 @@
+p.call{
+	font-size: 1.8rem;
+    span{
+		 white-space: nowrap;
+		 color: #247ab7;
+    }
+}
+.table-legend{
+	padding-top: 2.5rem;
+	font-size: 2rem;
+	text-align: center;
+	margin: auto;
+}
+.table{
+	width: 100%;
+	border-collapse: collapse;
+    border-spacing: 0;
+    th{
+    	font-size: 1.6rem;
+    	background: #edf7f9;
+    	padding: 1rem;
+    	text-align: left;
+    	text-transform: uppercase;
+    }
+    td{
+    	font-size: 1.4rem;
+    	padding: 1.5rem 0.5rem;
+    }
+    .element-invisible{
+    	display: none;
+    }
+	.input-text{
+		border: 0.1rem solid #ddd;
+		height: 3rem;
+		text-align: center;
+	}
+	.subtotal{
+		background: #edf7f9;
+		span{
+			display: inline;
+		}
+	}
+	abbr{
+		cursor: help;
+	}
+	.image .bt-content{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		        div{
+		        	width: 100%;
+		        }
+		img{
+	    	max-width: 5rem;
+	    	min-width: 3.4rem;
+	    	margin-right: 3rem;
+	    }
+	}
+}
+input[type=submit].form-submit{
+	background:#fff;
+	border-radius: 1rem;
+	padding: 1.5rem;
+	border: 0.1rem solid #ddd;
+	cursor: pointer;
+	outline: none;
+	text-shadow: none;
+	font: 1.2rem $font1;
+	color: #000;
+	&:hover{
+		background: #286abc;
+		border: 0.1rem solid #286abc;
+		color: #fff;
+		-webkit-box-shadow:none;
+		        box-shadow:none;
+	}
+}
+
+#quote{
+	border: 0.1rem solid #a3b7cd;
+	line-height: 1.5rem;
+	font-size: 1.2rem;
+	padding: 1rem 2rem;
+	margin-top: 1.5rem;
+}
+
+.continue-shopping{
+	padding-top: 2rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	a{
+		font-size: 1.4rem;
+
+	}
+	&__input{
+		.form-submit{
+			margin-left: 2rem;
+			font-family: $font1;
+		}	
+	}
+}
+
+
+.coupen-block{
+	text-align: left;
+	h2{
+		font-size: 2rem;
+	}
+	input[type=submit].form-submit{
+		@include button;
+		@include button-submit;
+		border-radius: 0;
+		padding: 0;
+	}
+}
+
+input[type="radio"]{
+	vertical-align: middle;
+}
+.payment-method{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	border-bottom: 0.1rem solid #ccc;
+	padding-bottom: 2.5rem;
+	label{
+		padding-top: 0;
+	}
+	.img-check{
+		padding-left: 2rem;
+		img{
+			min-width: 10rem;
+			max-width: 11rem;
+			margin: 0;
+		}
+	}
+	&__ul{
+		padding-left: 2rem;
+		li{
+			padding-bottom: 1rem;
+		}
+		span{
+			display: inline;
+			font-size: 1.4rem;
+			&:first-child{
+				font-family: $font-bold;
+			}
+		}
+	}
+}
+
+
+.echeck{
+	img{
+		max-width: 32rem;
+	}
+}
+
+.submit-check-bottom{
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -webkit-box-pack: center;
+	     -ms-flex-pack: center;
+	         justify-content: center;
+	 -ms-flex-wrap: wrap;
+	     flex-wrap: wrap;
+	 input[type=submit].form-submit{
+	 	margin: 1rem;
+	 }
+}
+@media screen and (max-width: 768px){
+.table{
+	tr{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	td{
+		padding: 1rem 1.5rem;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		&:nth-child(odd){
+			background: #edf7f9;
+		}
+	}
+	.subtotal:before{
+		display: none;
+	}
+
+}
+table.bt tbody td span{
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+.payment-method{
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	&__ul{
+		padding-left: 0;
+	}
+	.img-check img{
+		margin-bottom: 1rem;
+	}
+}
+}
+@media screen and (max-width: 480px){
+.table{
+	.image .bt-content{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		img{
+			margin: auto;
+		}
+	}
+}
+.continue-shopping{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	text-align: center;
+	 .form-submit{
+	 	margin: 1rem;
+	 }
+}
+}
